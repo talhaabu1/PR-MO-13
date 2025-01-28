@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+      <style>
+        .image{
+          width: 500px;
+          height: 500px;
+          object-position: center;
+          object-fit: cover;
+        }
+      </style>
+  </head>
+  <body style="font-family: Fira Code, serif">
+    <!-- Navbar -->
+    <nav id="Home" class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center"
+          ><img src="/Image/add-product.png" alt="" style="width: 50px" /><span
+            class="ms-3 fs-3 text-primary"
+            >DAWAN SHOP</span
+          ></a
+        >
+        <button
+          class="navbar-toggler text-primary"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="aria-disabled="true"false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-primary"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#Home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#Product">PRODUCT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#accordionExample" >DESCRIPTION</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#About" >ABOUT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Product -->
+    <div id="Product" class="container my-5 border border-3 p-5 border-primary rounded-3">
+      <div class="row">
+        <!-- Product Image Carousel -->
+        <div class="col-md-6">
+          <div
+            id="productCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="Image/watch2.png"
+                  class="d-block image"
+                  alt="Watch Image 1" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Image/watch3.jpeg"
+                  class="d-block image"
+                  alt="Watch Image 2" />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="Image/watcg4.png"
+                  class="d-block image"
+                  alt="Watch Image 3" />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#productCarousel"
+              data-bs-slide="next">
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Product Details -->
+        <div class="col-md-6">
+          <h1>SMART WATCH</h1>
+          <p class="text-muted">Save Your Time Smart Watch</p>
+          <h4 class="text-success">&#2547;3000
+          </h4>
+          <h5>Key Features:</h5>
+          <ul>
+            <li>CALL</li>
+            <li>MESSAGE</li>
+            <li>BROWSING</li>
+            <li>ANDROID</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Accordion -->
+    <div class="accordion container-md mt-5 mb-5" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Product Description
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            This premium watch combines timeless design with modern craftsmanship. Its durable materials and sleek appearance make it perfect for any occasion.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Features and Functionality
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Includes water resistance up to 100 meters, scratch-resistant sapphire crystal, and an automatic movement with a 48-hour power reserve.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Technical Specifications
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Case diameter: 42mm, Material: Stainless steel, Strap: Genuine leather, Movement: Swiss-made automatic.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer id="About" class="bg-light py-4">
+      <div class="container text-center">
+        <p class="mb-2">Follow us:</p>
+        <div class="d-flex justify-content-center gap-3">
+          <a href="#" class="text-dark">
+            <i class="bi bi-facebook" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-twitter" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-instagram" style="font-size: 1.5rem;"></i>
+          </a>
+          <a href="#" class="text-dark">
+            <i class="bi bi-linkedin" style="font-size: 1.5rem;"></i>
+          </a>
+        </div>
+        <p class="mt-3 mb-0">© 2025 DAWAN SHOP. All rights reserved.</p>
+      </div>
+    </footer>
+  
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
